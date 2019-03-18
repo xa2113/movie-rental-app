@@ -33,13 +33,12 @@ flyway {
 }
 
 
-
-
 dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.12'
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("com.fasterxml.jackson.core:jackson-databind")
-    
+
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation("com.h2database:h2")
 

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>A List of All Available Movies</title>
+</head>
+<body>
+<tr th:each="movie : ${movies}">
+    <li><td><span th:text="${movie.getTitle()}"> Title </span></td> -
+        <span th:text="${movie.getActor()}"> Actor </span></li>
+
+
+</body>
+</html>
