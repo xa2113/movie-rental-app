@@ -7,7 +7,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.eileen.presentation.MovieController;
+import com.eileen.presentation.RestMovieController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(MovieController.class)
+@WebMvcTest(RestMovieController.class)
 public class WebMockTest {
 
     @Autowired

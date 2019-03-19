@@ -16,4 +16,6 @@ public interface MovieRepository {
     String getActorWithMovie(String movie);
 
     Customer createNewCustomer(Customer customer);
+
+    List<Movie> showAllMoviesToReturn(String customerName);
 }

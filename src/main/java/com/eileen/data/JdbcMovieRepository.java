@@ -33,15 +33,14 @@ public class JdbcMovieRepository implements MovieRepository {
     public void rentAMovie(String customer, String movieTitle) {
         int customerID = getCustomerIdFromName(customer);
         int movieID = getMovieIdFromMovieTitle(movieTitle);
-        String query = "insert into Rentals (R_Date_Rented, R_C_ID, R_M_ID) values (now(),"
-                + customerID + "," + movieID + ");";
-        jdbcTemplate.execute(query);
+        String query = "insert into Rentals (R_Date_Rented, R_C_ID, R_M_ID) values (now(), ?, ?);";
+        jdbcTemplate.update(query,new Object[]{customerID,movieID});
         changeMovieAvailability(movieID,0);
     }
 
     private void changeMovieAvailability(int movieID, int isAvailable) {
-        String query = "update MOVIES set M_AVAILABLE = " + isAvailable + " where M_TITLE = " + movieID;
-        jdbcTemplate.execute(query);
+        String query = "update MOVIES set M_AVAILABLE = ? where M_ID = ?";
+        jdbcTemplate.update(query,new Object[]{isAvailable,movieID});
 
     }
 
@@ -53,8 +52,10 @@ public class JdbcMovieRepository implements MovieRepository {
 
     @Override
     public void returnAMovie(String customer, String movieTitle, int cost) {
-        String query = "update Rentals set R_COST = " + cost + ", R_Date_Returned = now() where R_M_ID =" + getMovieIdFromMovieTitle(movieTitle);
-        jdbcTemplate.execute(query);
+        int movieID = getMovieIdFromMovieTitle(movieTitle);
+        String query = "update Rentals set R_COST = ?, R_Date_Returned = now() where R_M_ID = ?";
+        jdbcTemplate.update(query,new Object[]{cost,getMovieIdFromMovieTitle(movieTitle)});
+        changeMovieAvailability(movieID,1);
     }
 
     @Override
@@ -76,6 +77,13 @@ public class JdbcMovieRepository implements MovieRepository {
         String query = "insert into Customers (C_NAME, C_ADDRESS) values (?,?);";
         jdbcTemplate.update(query,customer.getCustomerName(),customer.getCustomerAddress());
         return jdbcTemplate.queryForObject("select * from customers where C_NAME = ?",new Object[]{customer.getCustomerName()},new customerRowMapper());
+    }
+
+    @Override
+    public List<Movie> showAllMoviesToReturn(String customerName) {
+        int customerId = getCustomerIdFromName(customerName);
+        String query = "select M_TITLE ,M_ID ,M_MAIN_ACTOR from movies where M_ID in (select R_M_ID from rentals where R_Date_Returned is null and R_C_ID = ?);";
+        return jdbcTemplate.query(query, new Object[]{customerId}, new MovieRowMapper());
     }
 
     private static class MovieRowMapper implements RowMapper<Movie> {

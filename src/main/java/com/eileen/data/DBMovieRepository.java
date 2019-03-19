@@ -184,6 +184,11 @@ public class DBMovieRepository implements MovieRepository {
         return null;
     }
 
+    @Override
+    public List<Movie> showAllMoviesToReturn(String customerName) {
+        return null;
+    }
+
     private int getMovieIdFromTitle(String movieTitle) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;

@@ -20,7 +20,6 @@ public class MovieServices {
     }
 
     public List<Movie> getAllAvailableMovies() {
-        System.out.println("Here are all the movies.");
         return movieRepository.getAllAvailableMovies();
     }
 
@@ -39,12 +38,15 @@ public class MovieServices {
         return (int)DAYS.between(startDate,endDate) * COST_PER_DAY + 1;
     }
 
-
     public String getActorWithMovie(String movie) {
         return movieRepository.getActorWithMovie(movie);
     }
 
     public Customer createNewCustomer(Customer customer) {
         return movieRepository.createNewCustomer(customer);
+    }
+
+    public List<Movie> showAllMoviesToReturn(String customerName){
+        return movieRepository.showAllMoviesToReturn(customerName);
     }
 }

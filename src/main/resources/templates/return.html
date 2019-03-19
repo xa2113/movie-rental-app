@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter the details to return a movie</title>
+</head>
+<body>
+<h3>Return a movie</h3>
+
+<h4>Enter your name and the movie to return</h4>
+<form action="#" th:action="@{/return}" th:object="${rentalRequest}" method="post">
+    <p>Your name <input type="text" th:field="*{customerName}"/></p>
+    <p>Movie title <input type="text" th:field="*{movieTitle}"/></p>
+    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+</form>
+
+<p></p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">title</th>
+        <th scope="col">actor</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="movie : ${movies}">
+        <td><span th:text="${movie.title}">  </span></td>
+        <td><span th:text="${movie.actor}">  </span></td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>

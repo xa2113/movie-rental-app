@@ -33,6 +33,7 @@ public class Menu {
             System.out.println("1 - List all available movies.");
             System.out.println("2 - Rent a movie.");
             System.out.println("3 - Return a movie.");
+            System.out.println("4 - Show all rented movies.");
             System.out.println("0 - Exit.");
 
             int userSelected = Integer.valueOf(scanner.nextLine());
@@ -57,6 +58,8 @@ public class Menu {
                     movieServices.returnAMovie(customerName, movieTitleToReturn);
                     System.out.println("You have returned: " + movieTitleToReturn);
                     break;
+                case 4:
+                    System.out.println(movieServices.showAllMoviesToReturn(customerName));
                 case 0:
                     System.out.println("Goodbye! Thank you for visiting us.");
                     finish = true;
