@@ -5,10 +5,14 @@
     <title>A List of All Available Movies</title>
 </head>
 <body>
+<h1>Welcome to the Movie BlockBuster!</h1>
+<h3>Here are all the available movies to rent:</h3>
+<div>
 <tr th:each="movie : ${movies}">
-    <li><td><span th:text="${movie.getTitle()}"> Title </span></td> - 
+    <li><td><span th:text="${movie.getTitle()}"> Title </span></td> -
         <span th:text="${movie.getActor()}"> Actor </span></li>
-
-
+</div>
+    <p></p>
+    <a href="/customer">Create a new account</a>
 </body>
 </html>
