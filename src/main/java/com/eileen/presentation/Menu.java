@@ -60,6 +60,13 @@ public class Menu {
                     break;
                 case 4:
                     System.out.println(movieServices.showAllMoviesToReturn(customerName));
+                    break;
+                case 5:
+                    System.out.println("Please enter the movie you want to rent:");
+                    String movieTitle = scanner.nextLine();
+                    System.out.println(movieServices.showResultFromMovieTitle(movieTitle));
+                    break;
+
                 case 0:
                     System.out.println("Goodbye! Thank you for visiting us.");
                     finish = true;

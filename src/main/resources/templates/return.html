@@ -23,7 +23,9 @@
         <th scope="col">actor</th>
     </tr>
     </thead>
+
     <tbody>
+
     <tr th:each="movie : ${movies}">
         <td><span th:text="${movie.title}">  </span></td>
         <td><span th:text="${movie.actor}">  </span></td>

@@ -49,4 +49,8 @@ public class MovieServices {
     public List<Movie> showAllMoviesToReturn(String customerName){
         return movieRepository.showAllMoviesToReturn(customerName);
     }
+
+    public List<Movie> showResultFromMovieTitle(String title) {
+        return movieRepository.showResultFromMovieTitle(title);
+    }
 }

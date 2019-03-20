@@ -4,8 +4,10 @@ import com.eileen.logic.Customer;
 import com.eileen.logic.Movie;
 import com.eileen.logic.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
@@ -13,12 +15,16 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
 
+@Primary
 @Repository
 public class JdbcMovieRepository implements MovieRepository {
 
-    @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    @Autowired
+    public JdbcMovieRepository(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     @Override
     public List<Movie> getAllAvailableMovies() {
@@ -84,6 +90,12 @@ public class JdbcMovieRepository implements MovieRepository {
         int customerId = getCustomerIdFromName(customerName);
         String query = "select M_TITLE ,M_ID ,M_MAIN_ACTOR from movies where M_ID in (select R_M_ID from rentals where R_Date_Returned is null and R_C_ID = ?);";
         return jdbcTemplate.query(query, new Object[]{customerId}, new MovieRowMapper());
+    }
+
+    @Override
+    public List<Movie> showResultFromMovieTitle(String title) {
+        String query = "select M_TITLE, M_ID, M_MAIN_ACTOR from movies where M_Title like ?";
+        return jdbcTemplate.query(query,new Object[]{"%"+ title +"%"},new MovieRowMapper());
     }
 
     private static class MovieRowMapper implements RowMapper<Movie> {

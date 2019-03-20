@@ -21,11 +21,19 @@ public class WebController {
     private MovieServices movieServices;
 
     @GetMapping("/")
-    public String showAll(Model model) {
+    public String showAll( Model model) {
         model.addAttribute("movies", movieServices.getAllAvailableMovies());
         model.addAttribute("rentalRequest", new RentalRequest());
+        model.addAttribute("searchRequest", new SearchRequest());
         model.addAttribute("customer", new Customer());
         return "index";
+    }
+
+    @GetMapping("/search-results")
+    public String showSearchResults(@RequestParam(name="title", required = false) String title, Model model){
+        model.addAttribute("searchRequest", new SearchRequest());
+        model.addAttribute("searchedMovies", movieServices.showResultFromMovieTitle(title));
+        return "searchResults";
     }
 
     @PostMapping("/rent")
@@ -59,4 +67,5 @@ public class WebController {
         movieServices.createNewCustomer(customer);
         return "loggedIn";
     }
+
 }

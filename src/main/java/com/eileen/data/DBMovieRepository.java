@@ -3,6 +3,7 @@ package com.eileen.data;
 import com.eileen.logic.Customer;
 import com.eileen.logic.Movie;
 import com.eileen.logic.MovieRepository;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.time.LocalDate;
@@ -10,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-//@Repository
+@Repository
 public class DBMovieRepository implements MovieRepository {
 
     @Override
@@ -186,6 +187,11 @@ public class DBMovieRepository implements MovieRepository {
 
     @Override
     public List<Movie> showAllMoviesToReturn(String customerName) {
+        return null;
+    }
+
+    @Override
+    public List<Movie> showResultFromMovieTitle(String title) {
         return null;
     }
 

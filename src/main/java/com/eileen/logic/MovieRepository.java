@@ -18,4 +18,6 @@ public interface MovieRepository {
     Customer createNewCustomer(Customer customer);
 
     List<Movie> showAllMoviesToReturn(String customerName);
+
+    List<Movie> showResultFromMovieTitle(String title);
 }
