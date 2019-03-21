@@ -59,7 +59,7 @@ public class WebController {
         return "return";
     }
 
-    @PostMapping("/show-return")
+    @PostMapping("/return")
     public String returnAMovie(@ModelAttribute RentalRequest rentalRequest,Model model) {
         model.addAttribute("searchRequest", new SearchRequest());
         movieServices.returnAMovie(rentalRequest.getCustomerName(), rentalRequest.getMovieTitle());

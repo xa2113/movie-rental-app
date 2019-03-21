@@ -59,14 +59,14 @@ public class JdbcMovieRepository implements MovieRepository {
     @Override
     public void returnAMovie(String customer, String movieTitle, int cost) {
         int movieID = getMovieIdFromMovieTitle(movieTitle);
-        String query = "update Rentals set R_COST = ?, R_Date_Returned = now() where R_M_ID = ?";
+        String query = "update Rentals set R_Date_Returned = now(), R_COST = ? where R_M_ID = ?";
         jdbcTemplate.update(query,new Object[]{cost,getMovieIdFromMovieTitle(movieTitle)});
         changeMovieAvailability(movieID,1);
     }
 
     @Override
     public LocalDate getRentalDateFromMovieTitle(String movieTitle) {
-        String query = "select R_Date_Rented from Rentals where R_Date_Returned is null AND R_M_ID = ?";
+        String query = "select R_Date_Rented from Rentals where R_M_ID = ? AND R_Date_Returned is null;";
         int movieId = getMovieIdFromMovieTitle(movieTitle);
         return jdbcTemplate.queryForObject(query,new Object[]{movieId}, LocalDate.class);
 
