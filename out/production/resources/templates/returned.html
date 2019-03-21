@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <div th:replace="fragments/head::headFragment"></div>
     <title>Returned a movie!</title>
 </head>
 <body>
+<div th:replace="fragments/navBar::NavBarFragment"></div>
 <h2><span th:text="${rentalRequest.customerName}"></span>, You have a successfully returned<span th:text="${rentalRequest.movieTitle}"></span> !</h2>
 <p></p>
 <a href="/">Return to Home Page.</a>

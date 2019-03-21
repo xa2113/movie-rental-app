@@ -31,7 +31,7 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        menu.startMenu();
+        //menu.startMenu();
 //        ApiSearch apiSearch = restTemplate.getForObject("http://www.omdbapi.com/?s=batman&apikey=thewdb", ApiSearch.class);
 //        log.info(apiSearch.toString());
     }

@@ -37,33 +37,45 @@ public class WebController {
     }
 
     @PostMapping("/rent")
-    public String rentAMovie(@ModelAttribute RentalRequest rentalRequest) {
+    public String rentAMovie(@ModelAttribute RentalRequest rentalRequest,Model model) {
+        model.addAttribute("searchRequest", new SearchRequest());
         movieServices.rentAMovie(rentalRequest.getCustomerName(), rentalRequest.getMovieTitle());
         return "/rented";
     }
 
-    @GetMapping("/return")
-    public String returnPage(@RequestParam(name = "customerName", required = true) String customerName, Model model) {
+    @GetMapping("/show-return")
+    public String showReturnPage(@RequestParam(name = "customerName", required = false) String customerName, Model model) {
         model.addAttribute("rentalRequest", new RentalRequest());
+        model.addAttribute("searchRequest", new SearchRequest());
         List<Movie> attributeValue = movieServices.showAllMoviesToReturn(customerName);
         model.addAttribute("movies", attributeValue);
-        return "/return";
+        return "/showReturn";
     }
 
-    @PostMapping("/return")
-    public String returnAMovie(@ModelAttribute RentalRequest rentalRequest) {
+    @GetMapping("/return")
+    public String returnPage(Model model){
+        model.addAttribute("rentalRequest", new RentalRequest());
+        model.addAttribute("searchRequest",new SearchRequest());
+        return "return";
+    }
+
+    @PostMapping("/show-return")
+    public String returnAMovie(@ModelAttribute RentalRequest rentalRequest,Model model) {
+        model.addAttribute("searchRequest", new SearchRequest());
         movieServices.returnAMovie(rentalRequest.getCustomerName(), rentalRequest.getMovieTitle());
         return "/returned";
     }
 
     @GetMapping("/customer")
     public String customerForm(Model model) {
+        model.addAttribute("searchRequest",new SearchRequest());
         model.addAttribute("customer", new Customer());
         return "customer";
     }
 
     @PostMapping("/customer")
-    public String customerSubmit(@ModelAttribute Customer customer) {
+    public String customerSubmit(@ModelAttribute Customer customer,Model model) {
+        model.addAttribute("searchRequest", new SearchRequest());
         movieServices.createNewCustomer(customer);
         return "loggedIn";
     }

@@ -2,27 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc9eafd4-c5b8-401b-a5b9-34c11c0be6b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/eileen/presentation/SearchRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/searchResults.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navBar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/showReturn.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/data/DBMovieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/data/DBMovieRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/data/JdbcMovieRepository$MovieRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/data/JdbcMovieRepository$MovieRowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/data/JdbcMovieRepository$customerRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/data/JdbcMovieRepository$customerRowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/data/JdbcMovieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/data/JdbcMovieRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/logic/MovieRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/logic/MovieRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/logic/MovieServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/logic/MovieServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/presentation/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/presentation/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/presentation/WebController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/presentation/WebController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/customer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/loggedIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/loggedIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/rented.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/rented.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/templates/return.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/return.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eileen/data/DBMovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eileen/data/DBMovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eileen/data/JdbcMovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eileen/data/JdbcMovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eileen/presentation/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eileen/presentation/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/returned.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/returned.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/searchResults.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/eileen/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eileen/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/eileen/presentation/WebController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/eileen/presentation/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/loggedIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/loggedIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/rented.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/rented.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/return.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/return.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/returned.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/returned.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/searchResults.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -84,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/WebController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="157">
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,36 +95,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/data/JdbcMovieRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="96" column="90" selection-start-line="96" selection-start-column="90" selection-end-line="96" selection-end-column="90" />
+            <state relative-caret-position="132">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/searchResults.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -131,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+            <state relative-caret-position="224">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#549#550#0" expanded="true" />
@@ -143,31 +121,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/logic/RentalRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="66" column="91" selection-start-line="66" selection-start-column="91" selection-end-line="66" selection-end-column="91" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/rented.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="105">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/returned.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/searchResults.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/return.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/showReturn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -176,7 +169,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/loggedIn.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -184,8 +177,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="89" column="7" lean-forward="true" selection-start-line="86" selection-end-line="89" selection-end-column="7" />
+            <state relative-caret-position="45">
+              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -195,8 +188,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -241,32 +234,35 @@
         <option value="$PROJECT_DIR$/src/test/java/com/eileen/logic/ApplicationTestWithoutServer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/eileen/logic/WebMockTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/listMovies.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/customer.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/loggedIn.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/logic/RentalRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/returned.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/rented.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/logic/SearchResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieServices.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/data/DBMovieRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/presentation/SearchReuqest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/presentation/SearchRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eileen/presentation/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eileen/data/JdbcMovieRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/head.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eileen/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/navBar.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/customer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/loggedIn.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/rented.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/returned.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/searchResults.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/return.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/presentation/WebController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/searchResults.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eileen/presentation/Menu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eileen/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eileen/data/JdbcMovieRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/showReturn.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="3" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="36" />
     <option name="y" value="23" />
-    <option name="width" value="1277" />
-    <option name="height" value="722" />
+    <option name="width" value="1244" />
+    <option name="height" value="723" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -275,6 +271,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -362,17 +360,24 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MovieRental" type="b2602c69:ProjectViewProjectNode" />
+              <item name="movie-rental-with-spring" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553070338569" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553128397543" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/db/migration" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -522,10 +527,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="36" y="23" width="1244" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22617124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27537438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -533,12 +538,12 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="DB Browser" order="8" weight="0.32956383" />
+      <window_info id="DB Browser" order="8" weight="0.32881773" />
       <window_info id="Project Explorer" order="9" weight="0.32956383" />
       <window_info id="Job Explorer" order="10" weight="0.32956383" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7495961" visible="true" weight="0.269863" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7495961" visible="true" weight="0.29160064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39863014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -604,11 +609,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1_TESTFILE.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__DOSOMETHING.sql" />
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.1.3.RELEASE/5759c931e1287f82d132f37fcb14c396836ee42/spring-boot-2.1.3.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -812,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/customer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/data/ApiMovie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -848,13 +841,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/logic/SearchResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/logic/SearchResult.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -900,20 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/returned.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/return.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/SearchRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -934,56 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/rented.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/loggedIn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="89" column="7" lean-forward="true" selection-start-line="86" selection-end-line="89" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/WebController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/searchResults.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/logic/RentalRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -993,7 +916,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
+        <state relative-caret-position="370">
           <caret line="66" column="91" selection-start-line="66" selection-start-column="91" selection-end-line="66" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1003,8 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="187">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#724#725#0" expanded="true" />
@@ -1013,13 +936,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/customer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/loggedIn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/rented.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/returned.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/searchResults.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/logic/MovieServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/data/JdbcMovieRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="96" column="90" selection-start-line="96" selection-start-column="90" selection-end-line="96" selection-end-column="90" />
+        <state relative-caret-position="132">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/return.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/WebController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/showReturn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
         </state>
       </provider>
     </entry>

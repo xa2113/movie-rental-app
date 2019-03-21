@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <div th:replace="fragments/head::headFragment"></div>
+    <title>Here are the movies you can return</title>
+</head>
+<body>
+<div th:replace="fragments/navBar::NavBarFragment"></div>
+<h3>Return a movie</h3>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Actor</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    <tr th:each="movie : ${movies}">
+        <td><span th:text="${movie.title}">  </span></td>
+        <td><span th:text="${movie.actor}">  </span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
