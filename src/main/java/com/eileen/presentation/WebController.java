@@ -36,11 +36,24 @@ public class WebController {
         return "searchResults";
     }
 
+    @GetMapping("/rent")
+    public String rentPage(Model model,RentalRequest rentalRequest){
+        model.addAttribute("rentalRequest",new RentalRequest());
+        model.addAttribute("searchRequest",new SearchRequest());
+        return "/rent";
+    }
+
     @PostMapping("/rent")
     public String rentAMovie(@ModelAttribute RentalRequest rentalRequest,Model model) {
         model.addAttribute("searchRequest", new SearchRequest());
         movieServices.rentAMovie(rentalRequest.getCustomerName(), rentalRequest.getMovieTitle());
         return "/rented";
+    }
+
+    @GetMapping("/successLogin")
+    public String loginSuccess(Model model){
+        model.addAttribute("searchRequest",new SearchRequest());
+        return "/successLogin";
     }
 
     @GetMapping("/show-return")
@@ -64,6 +77,12 @@ public class WebController {
         model.addAttribute("searchRequest", new SearchRequest());
         movieServices.returnAMovie(rentalRequest.getCustomerName(), rentalRequest.getMovieTitle());
         return "/returned";
+    }
+
+    @GetMapping("/login")
+    public String loginPage(Model model){
+        model.addAttribute("searchRequest",new SearchRequest());
+        return "/login";
     }
 
     @GetMapping("/customer")

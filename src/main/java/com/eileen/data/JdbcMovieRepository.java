@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
@@ -39,12 +38,13 @@ public class JdbcMovieRepository implements MovieRepository {
     public void rentAMovie(String customer, String movieTitle) {
         int customerID = getCustomerIdFromName(customer);
         int movieID = getMovieIdFromMovieTitle(movieTitle);
+        setMovieAvailability(movieID,0);
         String query = "insert into Rentals (R_Date_Rented, R_C_ID, R_M_ID) values (now(), ?, ?);";
         jdbcTemplate.update(query,new Object[]{customerID,movieID});
-        changeMovieAvailability(movieID,0);
+
     }
 
-    private void changeMovieAvailability(int movieID, int isAvailable) {
+    private void setMovieAvailability(int movieID, int isAvailable) {
         String query = "update MOVIES set M_AVAILABLE = ? where M_ID = ?";
         jdbcTemplate.update(query,new Object[]{isAvailable,movieID});
 
@@ -59,9 +59,10 @@ public class JdbcMovieRepository implements MovieRepository {
     @Override
     public void returnAMovie(String customer, String movieTitle, int cost) {
         int movieID = getMovieIdFromMovieTitle(movieTitle);
+        setMovieAvailability(movieID,1);
         String query = "update Rentals set R_Date_Returned = now(), R_COST = ? where R_M_ID = ?";
         jdbcTemplate.update(query,new Object[]{cost,getMovieIdFromMovieTitle(movieTitle)});
-        changeMovieAvailability(movieID,1);
+
     }
 
     @Override
