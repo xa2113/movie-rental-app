@@ -3,7 +3,6 @@ package com.eileen.logic;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
-import javax.management.relation.Role;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.util.HashSet;
@@ -73,7 +72,7 @@ public class User {
         return roles;
     }
 
-    public void setRoles(HashSet<com.eileen.logic.Role> roles) {
+    public void setRoles(HashSet<Role> roles) {
         this.roles = roles;
     }
 }
