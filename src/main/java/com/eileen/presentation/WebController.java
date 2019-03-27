@@ -3,7 +3,6 @@ package com.eileen.presentation;
 import com.eileen.logic.Customer;
 import com.eileen.logic.Movie;
 import com.eileen.logic.MovieServices;
-import com.eileen.logic.RentalRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -50,11 +49,6 @@ public class WebController {
         return "/rented";
     }
 
-    @GetMapping("/successLogin")
-    public String loginSuccess(Model model){
-        model.addAttribute("searchRequest",new SearchRequest());
-        return "/successLogin";
-    }
 
     @GetMapping("/show-return")
     public String showReturnPage(@RequestParam(name = "customerName", required = false) String customerName, Model model) {
@@ -79,11 +73,6 @@ public class WebController {
         return "/returned";
     }
 
-    @GetMapping("/login")
-    public String loginPage(Model model){
-        model.addAttribute("searchRequest",new SearchRequest());
-        return "/login";
-    }
 
     @GetMapping("/customer")
     public String customerForm(Model model) {
