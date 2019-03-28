@@ -1,6 +1,6 @@
 package com.eileen.data;
 
-import com.eileen.logic.Role;
+import com.eileen.logic.user.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

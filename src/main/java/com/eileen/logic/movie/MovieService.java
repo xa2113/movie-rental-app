@@ -1,6 +1,7 @@
 package com.eileen.logic;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -9,16 +10,17 @@ import java.util.List;
 import static java.time.temporal.ChronoUnit.DAYS;
 
 @Service
-public class MovieServices {
+public class MovieService {
 
     public static final int COST_PER_DAY = 1;
     private MovieRepository movieRepository;
 
     @Autowired
-    public MovieServices(MovieRepository movieRepository) {
+    public MovieService(MovieRepository movieRepository) {
         this.movieRepository = movieRepository;
     }
 
+    @Cacheable("movies")
     public List<Movie> getAllAvailableMovies() {
         return movieRepository.getAllAvailableMovies();
     }
@@ -46,6 +48,7 @@ public class MovieServices {
         return movieRepository.createNewCustomer(customer);
     }
 
+    @Cacheable("moviesToReturn")
     public List<Movie> showAllMoviesToReturn(String customerName){
         return movieRepository.showAllMoviesToReturn(customerName);
     }
@@ -53,4 +56,5 @@ public class MovieServices {
     public List<Movie> showResultFromMovieTitle(String title) {
         return movieRepository.showResultFromMovieTitle(title);
     }
+
 }
