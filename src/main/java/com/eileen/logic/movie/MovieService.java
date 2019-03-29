@@ -1,5 +1,6 @@
-package com.eileen.logic;
+package com.eileen.logic.movie;
 
+import com.eileen.logic.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

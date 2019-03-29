@@ -1,8 +1,8 @@
 package com.eileen.data;
 
 import com.eileen.logic.Customer;
-import com.eileen.logic.Movie;
-import com.eileen.logic.MovieRepository;
+import com.eileen.logic.movie.Movie;
+import com.eileen.logic.movie.MovieRepository;
 import org.springframework.stereotype.Repository;
 
 import java.sql.*;
@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@Repository
 public class DBMovieRepository implements MovieRepository {
 
     @Override

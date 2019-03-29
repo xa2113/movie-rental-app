@@ -1,4 +1,4 @@
-package com.eileen.presentation;
+package com.eileen.presentation.web;
 
 import com.eileen.logic.Customer;
 import com.eileen.logic.movie.Movie;
@@ -39,14 +39,14 @@ public class WebController {
     public String rentPage(Model model,RentalRequest rentalRequest){
         model.addAttribute("rentalRequest",new RentalRequest());
         model.addAttribute("searchRequest",new SearchRequest());
-        return "/rent";
+        return "/rental/rent";
     }
 
     @PostMapping("/rent")
     public String rentAMovie(@ModelAttribute RentalRequest rentalRequest,Model model) {
         model.addAttribute("searchRequest", new SearchRequest());
         movieService.rentAMovie(rentalRequest.getCustomerName(), rentalRequest.getMovieTitle());
-        return "/rented";
+        return "/rental/rented";
     }
 
 
@@ -56,21 +56,21 @@ public class WebController {
         model.addAttribute("searchRequest", new SearchRequest());
         List<Movie> attributeValue = movieService.showAllMoviesToReturn(customerName);
         model.addAttribute("movies", attributeValue);
-        return "/showReturn";
+        return "/rental/showReturn";
     }
 
     @GetMapping("/return")
     public String returnPage(Model model){
         model.addAttribute("rentalRequest", new RentalRequest());
         model.addAttribute("searchRequest",new SearchRequest());
-        return "return";
+        return "/rental/return";
     }
 
     @PostMapping("/return")
     public String returnAMovie(@ModelAttribute RentalRequest rentalRequest,Model model) {
         model.addAttribute("searchRequest", new SearchRequest());
         movieService.returnAMovie(rentalRequest.getCustomerName(), rentalRequest.getMovieTitle());
-        return "/returned";
+        return "/rental/returned";
     }
 
 
@@ -78,14 +78,14 @@ public class WebController {
     public String customerForm(Model model) {
         model.addAttribute("searchRequest",new SearchRequest());
         model.addAttribute("customer", new Customer());
-        return "customer";
+        return "/customer";
     }
 
     @PostMapping("/customer")
     public String customerSubmit(@ModelAttribute Customer customer,Model model) {
         model.addAttribute("searchRequest", new SearchRequest());
         movieService.createNewCustomer(customer);
-        return "loggedIn";
+        return "/login/loggedIn";
     }
 
 }

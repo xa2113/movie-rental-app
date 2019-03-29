@@ -7,6 +7,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.eileen.logic.movie.Movie;
+import com.eileen.logic.movie.MovieService;
 import com.eileen.presentation.RestMovieController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,16 +28,16 @@ public class WebMockTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private MovieServices movieServices;
+    private MovieService movieService;
 
     @Test
     public void allShouldReturnAllMoviesFromService() throws Exception{
-        List<Movie> mockMovieList = movieServices.getAllAvailableMovies();
+        List<Movie> mockMovieList = movieService.getAllAvailableMovies();
         Movie mockMovie = new Movie();
         mockMovie.setTitle("Mock movie");
         mockMovieList.add(mockMovie);;
 
-        when(movieServices.getAllAvailableMovies()).thenReturn(mockMovieList);
+        when(movieService.getAllAvailableMovies()).thenReturn(mockMovieList);
         this.mockMvc.perform(get("/movies")).andDo(print()).andExpect(status().isOk()).andExpect(content().string(containsString("Mock movie")));
 
     }

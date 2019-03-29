@@ -1,7 +1,5 @@
-package com.eileen.logic;
+package com.eileen.logic.user;
 
-import com.eileen.data.RoleRepository;
-import com.eileen.data.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

@@ -17,20 +17,6 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-
-//
-//    @Bean
-//    @Override
-//    public UserDetailsService userDetailsService(){
-//        UserDetails user =
-//                User.withDefaultPasswordEncoder()
-//                    .username("user")
-//                    .password("12345")
-//                    .roles("USER")
-//                    .build();
-//        return new InMemoryUserDetailsManager(user);
-    //  }
-
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
@@ -57,23 +43,23 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //
         httpSecurity.authorizeRequests()
                 .antMatchers("/", "/login", "/registration", "/searchResults").permitAll()
-                .antMatchers("/admin/**").hasAuthority("ADMIN").anyRequest()
-                .authenticated().and().csrf().disable()
+                .antMatchers("/admin/**").hasAuthority("ADMIN").anyRequest().authenticated()
+                .and().csrf().disable()
                 .formLogin()
-                .loginPage("/login").failureUrl("/login?error=true")
-                .usernameParameter("email")
-                .passwordParameter("password")
+                    .loginPage("/login")
+//                .defaultSuccessUrl("/successLogin",true)
+                    .usernameParameter("email")
+                    .passwordParameter("password")
                 .and().logout()
-                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                .logoutSuccessUrl("/").and().exceptionHandling()
-                .accessDeniedPage("/login-fail");
+                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                    .logoutSuccessUrl("/");
 
     }
 
 
     @Override
     public void configure(WebSecurity webSecurity) throws Exception {
-        webSecurity.ignoring().antMatchers("/resources/**", "/static/**", "/images/**");
+        webSecurity.ignoring().antMatchers("/resources/**", "/api/**");
     }
 }
 

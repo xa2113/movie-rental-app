@@ -1,8 +1,8 @@
 package com.eileen.data;
 
 import com.eileen.logic.Customer;
-import com.eileen.logic.Movie;
-import com.eileen.logic.MovieRepository;
+import com.eileen.logic.movie.Movie;
+import com.eileen.logic.movie.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;

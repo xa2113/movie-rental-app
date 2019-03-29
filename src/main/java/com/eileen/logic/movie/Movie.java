@@ -1,4 +1,4 @@
-package com.eileen.logic;
+package com.eileen.logic.movie;
 
 import java.io.Serializable;
 

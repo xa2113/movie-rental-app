@@ -1,4 +1,6 @@
-package com.eileen.logic;
+package com.eileen.logic.movie;
+
+import com.eileen.logic.Customer;
 
 import java.time.LocalDate;
 import java.util.List;

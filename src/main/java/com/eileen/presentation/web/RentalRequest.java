@@ -1,4 +1,4 @@
-package com.eileen.presentation;
+package com.eileen.presentation.web;
 
 public class RentalRequest {
 

@@ -1,6 +1,13 @@
 package com.eileen.logic;
 
-public class UserInvalidException extends Throwable {
-    public UserInvalidException(String token_in_valid) {
+import org.springframework.dao.DataAccessException;
+
+public class UserInvalidException extends RuntimeException {
+    public UserInvalidException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public UserInvalidException(String message) {
+        super(message);
     }
 }

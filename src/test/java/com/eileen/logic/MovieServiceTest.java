@@ -1,6 +1,9 @@
 package com.eileen.logic;
 
 
+import com.eileen.logic.movie.Movie;
+import com.eileen.logic.movie.MovieRepository;
+import com.eileen.logic.movie.MovieService;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,29 +16,29 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
 
 
-public class MovieServicesTest {
+public class MovieServiceTest {
 
     private static final List<Movie> EXAMPLE_MOVIE_TITLE = new LinkedList<>();
     private MovieRepository movieRepositoryMock;
-    private MovieServices movieServices;
+    private MovieService movieService;
 
     @Before
     public void setUp() throws Exception {
         movieRepositoryMock = mock(MovieRepository.class);
-        movieServices = new MovieServices(movieRepositoryMock);
+        movieService = new MovieService(movieRepositoryMock);
     }
 
     @Test
     public void whenGettingAllAvailableMovies_shouldReturnAListOfMovies() {
 
-        List<Movie> exampleMovieList = movieServices.getAllAvailableMovies();
+        List<Movie> exampleMovieList = movieService.getAllAvailableMovies();
         Movie titanic = new Movie();
         titanic.setTitle("Titanic");
         exampleMovieList.add(titanic);
 
         when(movieRepositoryMock.getAllAvailableMovies()).thenReturn(exampleMovieList);
 
-        assertThat(movieServices.getAllAvailableMovies()).contains(titanic);
+        assertThat(movieService.getAllAvailableMovies()).contains(titanic);
     }
 
     @Test
@@ -44,7 +47,7 @@ public class MovieServicesTest {
         String rentedMovieTitle = "TITANIC";
         doNothing().when(movieRepositoryMock).rentAMovie(testCustomer,rentedMovieTitle);
 
-        movieServices.rentAMovie(testCustomer,rentedMovieTitle);
+        movieService.rentAMovie(testCustomer,rentedMovieTitle);
     }
 
 
@@ -55,7 +58,7 @@ public class MovieServicesTest {
         int cost = 1;
        //when(movieRepositoryMock.returnAMovie(returningCustomer,returnedMovieTitle,cost).;
 
-        movieServices.returnAMovie(returningCustomer,returnedMovieTitle);
+        movieService.returnAMovie(returningCustomer,returnedMovieTitle);
 
     }
 
@@ -66,6 +69,6 @@ public class MovieServicesTest {
         LocalDate startDate = LocalDate.parse("03/11/2019", dateFormat);
         LocalDate endDate = LocalDate.parse("03/12/2019", dateFormat);
 
-       // assertThat(movieServices.calculateCost(startDate, endDate)).isEqualTo(2);
+       // assertThat(movieService.calculateCost(startDate, endDate)).isEqualTo(2);
     }
 }

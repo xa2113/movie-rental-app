@@ -1,12 +1,11 @@
 package com.eileen.presentation;
 
-import com.eileen.logic.User;
-import com.eileen.logic.UserService;
+import com.eileen.logic.user.User;
+import com.eileen.logic.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +23,7 @@ public class LoginController {
     @RequestMapping(value={"/login"}, method = RequestMethod.GET)
     public ModelAndView login(){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("login");
+        modelAndView.setViewName("/login/login");
         return modelAndView;
     }
 
@@ -34,7 +33,7 @@ public class LoginController {
         ModelAndView modelAndView = new ModelAndView();
         User user = new User();
         modelAndView.addObject("user", user);
-        modelAndView.setViewName("registration");
+        modelAndView.setViewName("login/registration");
         return modelAndView;
     }
 
@@ -48,12 +47,12 @@ public class LoginController {
                             "There is already a user registered with the email provided");
         }
         if (bindingResult.hasErrors()) {
-            modelAndView.setViewName("registration");
+            modelAndView.setViewName("login/registration");
         } else {
             userService.saveUser(user);
             modelAndView.addObject("successMessage", "User has been registered successfully");
             modelAndView.addObject("user", new User());
-            modelAndView.setViewName("registration");
+            modelAndView.setViewName("login/registration");
 
         }
         return modelAndView;
@@ -70,6 +69,10 @@ public class LoginController {
         return modelAndView;
     }
 
+    @GetMapping("/successLogin")
+    public String successLogin(){
+        return "login/successLogin";
+    }
 
 }
 

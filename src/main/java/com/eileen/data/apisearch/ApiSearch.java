@@ -1,6 +1,6 @@
-package com.eileen.data;
+package com.eileen.data.apisearch;
 
-import com.eileen.data.ApiMovie;
+import com.eileen.data.apisearch.ApiMovie;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

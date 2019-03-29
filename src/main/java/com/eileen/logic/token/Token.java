@@ -1,4 +1,4 @@
-package com.eileen.logic;
+package com.eileen.logic.token;
 
 public class Token {
     private String token;

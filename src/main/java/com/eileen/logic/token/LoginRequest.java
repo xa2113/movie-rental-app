@@ -1,6 +1,6 @@
 package com.eileen.logic.token;
 
-public class TokenLogin {
+public class LoginRequest {
 
     private String email;
     private String password;

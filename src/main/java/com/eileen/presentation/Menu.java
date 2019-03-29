@@ -1,7 +1,7 @@
 package com.eileen.presentation;
 
-import com.eileen.logic.Movie;
-import com.eileen.logic.MovieServices;
+import com.eileen.logic.movie.Movie;
+import com.eileen.logic.movie.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -12,11 +12,11 @@ import java.util.Scanner;
 public class Menu {
 
     private Scanner scanner = new Scanner(System.in);
-    private MovieServices movieServices;
+    private MovieService movieService;
 
     @Autowired
-    public Menu(MovieServices movieServices) {
-        this.movieServices = movieServices;
+    public Menu(MovieService movieService) {
+        this.movieService = movieService;
     }
 
     public void startMenu() {
@@ -41,7 +41,7 @@ public class Menu {
             switch (userSelected) {
                 case 1:
                     System.out.println("Here are all the available movies to rent: ");
-                    List<Movie> allAvailableMovies = movieServices.getAllAvailableMovies();
+                    List<Movie> allAvailableMovies = movieService.getAllAvailableMovies();
                     for (Movie movie : allAvailableMovies) {
                         System.out.println(movie);
                     }
@@ -49,22 +49,22 @@ public class Menu {
                 case 2:
                     System.out.println("Please enter the movie you want to rent:");
                     String movieTitleToRent = scanner.nextLine();
-                    movieServices.rentAMovie(customerName, movieTitleToRent);
+                    movieService.rentAMovie(customerName, movieTitleToRent);
                     System.out.println("You have rented : " + movieTitleToRent);
                     break;
                 case 3:
                     System.out.println("Please enter the movie you want to return:");
                     String movieTitleToReturn = scanner.nextLine();
-                    movieServices.returnAMovie(customerName, movieTitleToReturn);
+                    movieService.returnAMovie(customerName, movieTitleToReturn);
                     System.out.println("You have returned: " + movieTitleToReturn);
                     break;
                 case 4:
-                    System.out.println(movieServices.showAllMoviesToReturn(customerName));
+                    System.out.println(movieService.showAllMoviesToReturn(customerName));
                     break;
                 case 5:
                     System.out.println("Please enter the movie you want to rent:");
                     String movieTitle = scanner.nextLine();
-                    System.out.println(movieServices.showResultFromMovieTitle(movieTitle));
+                    System.out.println(movieService.showResultFromMovieTitle(movieTitle));
                     break;
 
                 case 0:
