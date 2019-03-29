@@ -56,9 +56,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .passwordParameter("password")
                 .and().logout()
                     .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                    .logoutSuccessUrl("/");
-                    //.and().exceptionHandling().defaultAuthenticationEntryPointFor(getRestAuthenticationEntryPoint(),new AntPathRequestMatcher("/api/**"))
-            ;
+                    .logoutSuccessUrl("/")
+                .and().exceptionHandling()
+                    .defaultAuthenticationEntryPointFor(getRestAuthenticationEntryPoint(),new AntPathRequestMatcher("/api/**"));
 
     }
 
