@@ -1,7 +1,7 @@
 package com.eileen.presentation;
 
-import com.eileen.logic.TokenInvalidException;
-import com.eileen.logic.UserInvalidException;
+import com.eileen.logic.token.TokenInvalidException;
+import com.eileen.logic.user.UserInvalidException;
 import com.eileen.presentation.web.SearchRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.ui.Model;

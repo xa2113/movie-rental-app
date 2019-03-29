@@ -1,4 +1,4 @@
-package com.eileen.logic;
+package com.eileen.logic.token;
 
 public class TokenInvalidException extends RuntimeException {
     public TokenInvalidException(String message) {

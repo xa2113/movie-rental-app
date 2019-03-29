@@ -1,8 +1,7 @@
 package com.eileen.data;
 
-import com.eileen.logic.TokenInvalidException;
-import com.eileen.logic.UserInvalidException;
-import com.eileen.logic.token.Token;
+import com.eileen.logic.token.TokenInvalidException;
+import com.eileen.logic.user.UserInvalidException;
 import com.eileen.logic.token.TokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;

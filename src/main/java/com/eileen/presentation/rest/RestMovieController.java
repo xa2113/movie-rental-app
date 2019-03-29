@@ -1,18 +1,14 @@
-package com.eileen.presentation;
+package com.eileen.presentation.rest;
 
-import com.eileen.logic.TokenInvalidException;
 import com.eileen.logic.movie.Movie;
 import com.eileen.logic.movie.MovieService;
 import com.eileen.logic.token.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController

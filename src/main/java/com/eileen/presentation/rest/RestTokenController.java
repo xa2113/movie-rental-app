@@ -1,7 +1,6 @@
-package com.eileen.presentation;
+package com.eileen.presentation.rest;
 
 import com.eileen.logic.movie.MovieService;
-import com.eileen.logic.token.LoginRequest;
 import com.eileen.logic.token.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

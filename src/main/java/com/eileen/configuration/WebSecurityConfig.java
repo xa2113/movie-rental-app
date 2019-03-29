@@ -3,16 +3,12 @@ package com.eileen.configuration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.web.AuthenticationEntryPoint;
-import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import javax.sql.DataSource;
@@ -46,26 +42,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
 
         httpSecurity.authorizeRequests()
-                .antMatchers("/", "/login", "/registration", "/search-results").permitAll()
+                .antMatchers("/", "/login", "/registration", "/search-results", "/error").permitAll()
                 .antMatchers("/admin/**").hasAuthority("ADMIN").anyRequest().authenticated()
                 .and().csrf().disable()
                 .formLogin()
-                    .loginPage("/login")
-//                .defaultSuccessUrl("/successLogin",true)
-                    .usernameParameter("email")
-                    .passwordParameter("password")
+                .loginPage("/login")
+                .usernameParameter("email")
+                .passwordParameter("password")
                 .and().logout()
-                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                    .logoutSuccessUrl("/")
-                .and().exceptionHandling()
-                    .defaultAuthenticationEntryPointFor(getRestAuthenticationEntryPoint(),new AntPathRequestMatcher("/api/**"));
-
+                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                .logoutSuccessUrl("/")
+                .and().exceptionHandling();
     }
-
-    private AuthenticationEntryPoint getRestAuthenticationEntryPoint() {
-        return new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED);
-    }
-
 
     @Override
     public void configure(WebSecurity webSecurity) throws Exception {

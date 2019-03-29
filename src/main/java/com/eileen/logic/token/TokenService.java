@@ -1,7 +1,6 @@
 package com.eileen.logic.token;
 
-import com.eileen.logic.TokenInvalidException;
-import com.eileen.logic.UserInvalidException;
+import com.eileen.logic.user.UserInvalidException;
 import com.eileen.logic.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

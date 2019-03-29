@@ -1,4 +1,4 @@
-package com.eileen.presentation;
+package com.eileen.presentation.web;
 
 import com.eileen.logic.user.User;
 import com.eileen.logic.user.UserService;

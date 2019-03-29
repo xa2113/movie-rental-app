@@ -9,7 +9,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.eileen.logic.movie.Movie;
 import com.eileen.logic.movie.MovieService;
-import com.eileen.presentation.RestMovieController;
+import com.eileen.presentation.rest.RestMovieController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

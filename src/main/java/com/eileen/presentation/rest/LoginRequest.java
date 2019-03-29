@@ -1,4 +1,4 @@
-package com.eileen.logic.token;
+package com.eileen.presentation.rest;
 
 public class LoginRequest {
 
