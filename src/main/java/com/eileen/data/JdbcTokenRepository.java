@@ -36,9 +36,7 @@ public class JdbcTokenRepository implements TokenRepository {
 
     @Override
     public Integer validateToken(String token) {
-
         String query = "select exists(select * from token where t_token =?)";
-
         try {
             return jdbcTemplate.queryForObject(query, new Object[]{token}, Integer.class);
         } catch (DataAccessException e){

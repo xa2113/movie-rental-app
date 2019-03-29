@@ -1,6 +1,5 @@
 package com.eileen.presentation;
 
-import com.eileen.logic.Customer;
 import com.eileen.logic.TokenInvalidException;
 import com.eileen.logic.movie.Movie;
 import com.eileen.logic.movie.MovieService;
@@ -8,7 +7,10 @@ import com.eileen.logic.token.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,23 +25,36 @@ public class RestMovieController {
     private TokenService tokenService;
 
     @GetMapping("/movies")
-    public ResponseEntity<List<Movie>> getMovieInWeb(@RequestParam String token) {
-        try {
-            tokenService.validateToken(token);
-        }catch(TokenInvalidException e){
-            return new ResponseEntity<>(new ArrayList<>(), HttpStatus.FORBIDDEN);
-        }
-        return new ResponseEntity<>(movieService.getAllAvailableMovies(),HttpStatus.OK);
+    public List<Movie> getMovieInWeb(@RequestParam String token) {
+        tokenService.validateToken(token);
+        return movieService.getAllAvailableMovies();
     }
 
     @GetMapping("/actor")
-    public ResponseEntity<String> getActorWithMovie(@RequestParam String token, String movie){
-        try {
-            tokenService.validateToken(token);
-        }catch(TokenInvalidException e){
-            return new ResponseEntity<>("invalid token", HttpStatus.FORBIDDEN);
-        }
-        return new ResponseEntity<>(movieService.getActorWithMovie(movie),HttpStatus.OK) ;
+    public String getActorWithMovie(@RequestParam String token, String movie) {
+        tokenService.validateToken(token);
+        return movieService.getActorWithMovie(movie);
     }
+
+// Another way of handling exceptions without global exception handler
+//    @GetMapping("/movies")
+//    public ResponseEntity<List<Movie>> getMovieInWeb(@RequestParam String token) {
+//        try {
+//            tokenService.validateToken(token);
+//        }catch(TokenInvalidException e){
+//            return new ResponseEntity<>(new ArrayList<>(), HttpStatus.FORBIDDEN);
+//        }
+//        return new ResponseEntity<>(movieService.getAllAvailableMovies(),HttpStatus.OK);
+//    }
+//
+//    @GetMapping("/actor")
+//    public ResponseEntity<String> getActorWithMovie(@RequestParam String token, String movie){
+//        try {
+//            tokenService.validateToken(token);
+//        }catch(TokenInvalidException e){
+//            return new ResponseEntity<>("invalid token", HttpStatus.FORBIDDEN);
+//        }
+//        return new ResponseEntity<>(movieService.getActorWithMovie(movie),HttpStatus.OK) ;
+//    }
 
 }
