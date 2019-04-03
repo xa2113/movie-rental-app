@@ -22,6 +22,6 @@ public class HttpRequestTest {
 
     @Test
     public void moviesShouldReturnAListOfMovies() throws Exception{
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/movies",String.class)).contains("The Godfather");
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/api/movies?token=12345",String.class)).contains("The Godfather");
     }
 }

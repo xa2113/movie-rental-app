@@ -24,7 +24,7 @@ public class ApplicationTestWithoutServer {
 
     @Test
     public void shouldReturnDefaultMessage() throws Exception{
-        this.mockMvc.perform(get("/movies")).andDo(print())
+        this.mockMvc.perform(get("/api/movies?token=12345")).andDo(print())
                 .andExpect(status().isOk()).andExpect(content().string(containsString("The Godfather")));
     }
 

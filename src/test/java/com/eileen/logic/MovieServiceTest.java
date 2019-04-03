@@ -50,17 +50,17 @@ public class MovieServiceTest {
         movieService.rentAMovie(testCustomer,rentedMovieTitle);
     }
 
-
-    @Test
-    public void returnAMovie_shouldReturn() {
-        String returningCustomer = "TEST_RETURNING_CUSTOMER";
-        String returnedMovieTitle = "MOVIE_TO_RETURN";
-        int cost = 1;
-       //when(movieRepositoryMock.returnAMovie(returningCustomer,returnedMovieTitle,cost).;
-
-        movieService.returnAMovie(returningCustomer,returnedMovieTitle);
-
-    }
+//
+//    @Test
+//    public void returnAMovie_shouldReturn() {
+//        String returningCustomer = "TEST_RETURNING_CUSTOMER";
+//        String returnedMovieTitle = "MOVIE_TO_RETURN";
+//        int cost = 1;
+//       //when(movieRepositoryMock.returnAMovie(returningCustomer,returnedMovieTitle,cost).;
+//
+//        movieService.returnAMovie(returningCustomer,returnedMovieTitle);
+//
+//    }
 
     @Test
     public void whenCalculateCost_shouldReturnCost() {
