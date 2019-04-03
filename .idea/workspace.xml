@@ -3,25 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fc9eafd4-c5b8-401b-a5b9-34c11c0be6b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/configuration/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/configuration/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/data/JdbcTokenRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/data/JdbcTokenRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/data/apisearch/ApiMovie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/data/apisearch/ApiSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/logic/TokenInvalidException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/logic/UserInvalidException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/logic/token/LoginRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/logic/token/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/logic/token/TokenService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/presentation/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/eileen/presentation/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/presentation/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/presentation/RestMovieController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/eileen/presentation/RestTokenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/eileen/logic/HttpRequestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/eileen/logic/HttpRequestTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/eileen/logic/MovieServicesTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/eileen/logic/WebMockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/com/eileen/logic/WebMockTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eileen/logic/ApplicationTestWithoutServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/eileen/logic/ApplicationTestWithoutServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eileen/logic/HttpRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/eileen/logic/HttpRequestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eileen/logic/WebMockTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -90,11 +72,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/MovieServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="660">
+              <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+              <folding>
+                <marker date="1554262243013" expanded="true" signature="1598:1981" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -120,7 +117,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/web/WebController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
+            <state relative-caret-position="285">
               <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -141,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/HttpRequestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="79" />
+            <state relative-caret-position="285">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -150,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/rest/RestTokenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="105">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,7 +159,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/rest/RestMovieController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
+            <state relative-caret-position="150">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -196,8 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/eileen/logic/MyUserPrincipal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eileen/logic/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/data/RoleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/configuration/WebMvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eileen/presentation/RentalRequest.java" />
@@ -247,6 +242,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/eileen/logic/HttpRequestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/eileen/logic/ApplicationTestWithoutServer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/eileen/logic/WebMockTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/eileen/logic/MovieServiceTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -493,7 +490,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554262242961" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554262998158" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/db/migration" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -523,7 +520,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MovieServiceTest">
+  <component name="RunManager" selected="JUnit.HttpRequestTest">
     <configuration name="ApplicationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.eileen.MovieRental.test" />
       <extension name="coverage">
@@ -554,18 +551,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpRequestTest.moviesShouldReturnAListOfMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HttpRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.eileen.MovieRental.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.eileen.presentation.web.*" />
+          <option name="PATTERN" value="com.eileen.logic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.eileen.logic" />
       <option name="MAIN_CLASS_NAME" value="com.eileen.logic.HttpRequestTest" />
-      <option name="METHOD_NAME" value="moviesShouldReturnAListOfMovies" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -603,18 +599,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ApplicationTestWithoutServer" />
-      <item itemvalue="JUnit.HttpRequestTest.moviesShouldReturnAListOfMovies" />
       <item itemvalue="JUnit.ApplicationTest" />
       <item itemvalue="JUnit.WebMockTest.allShouldReturnAllMoviesFromService" />
       <item itemvalue="JUnit.MovieServiceTest" />
+      <item itemvalue="JUnit.HttpRequestTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HttpRequestTest" />
         <item itemvalue="JUnit.MovieServiceTest" />
         <item itemvalue="JUnit.WebMockTest.allShouldReturnAllMoviesFromService" />
         <item itemvalue="JUnit.ApplicationTest" />
         <item itemvalue="JUnit.ApplicationTestWithoutServer" />
-        <item itemvalue="JUnit.HttpRequestTest.moviesShouldReturnAListOfMovies" />
       </list>
     </recent_temporary>
   </component>
@@ -632,9 +628,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WebMockTest - 2019.03.19 at 09h 54m 01s.xml">
-      <configuration name="WebMockTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HttpRequestTest_moviesShouldReturnAListOfMovies - 2019.04.03 at 11h 22m 43s.xml">
       <configuration name="HttpRequestTest.moviesShouldReturnAListOfMovies" configurationId="JUnit" />
     </history-entry>
@@ -662,12 +655,14 @@
     <history-entry file="MovieServiceTest - 2019.04.03 at 11h 30m 03s.xml">
       <configuration name="MovieServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MovieServiceTest - 2019.04.03 at 11h 30m 54s.xml">
+      <configuration name="MovieServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="723" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2786753" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28271407" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -680,12 +675,12 @@
       <window_info id="Job Explorer" order="10" weight="0.32956383" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3280507" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7495961" visible="true" weight="0.49128368" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7495961" weight="0.3534073" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3977813" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296355" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3296355" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4993565" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25040388" side_tool="true" weight="0.340729" />
       <window_info anchor="bottom" id="Build" order="10" sideWeight="0.8339768" weight="0.3296355" />
@@ -746,13 +741,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.1.4.RELEASE/471a9157eb19b4cbe5881a74a8b8ac621d07f0ad/spring-security-core-5.1.4.RELEASE-sources.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/logic/user/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1081,10 +1069,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/web/RentalRequest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/WebMockTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/ApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/MovieServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+          <folding>
+            <marker date="1554262243013" expanded="true" signature="1598:1981" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/ApplicationTestWithoutServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1097,7 +1103,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/web/WebController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
+        <state relative-caret-position="285">
           <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1105,10 +1111,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/web/RentalRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/rest/RestTokenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="105">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1117,7 +1130,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eileen/presentation/rest/RestMovieController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
+        <state relative-caret-position="150">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1125,38 +1138,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/ApplicationTestWithoutServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/HttpRequestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="79" />
+        <state relative-caret-position="285">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/WebMockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="44" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/ApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/eileen/logic/MovieServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
