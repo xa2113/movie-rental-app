@@ -6,6 +6,7 @@ import com.eileen.logic.movie.MovieRepository;
 import com.eileen.logic.movie.MovieService;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -15,7 +16,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;
 
-
+@ActiveProfiles("Test")
 public class MovieServiceTest {
 
     private static final List<Movie> EXAMPLE_MOVIE_TITLE = new LinkedList<>();
