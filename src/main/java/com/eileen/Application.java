@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.web.client.RestTemplate;
 
@@ -15,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableCaching
-public class Application implements CommandLineRunner {
+public class Application extends SpringBootServletInitializer {
 
     @Autowired
     Menu menu;
@@ -28,13 +29,6 @@ public class Application implements CommandLineRunner {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
-        //menu.startMenu();
-//        ApiSearch apiSearch = restTemplate.getForObject("http://www.omdbapi.com/?s=batman&apikey=thewdb", ApiSearch.class);
-//        log.info(apiSearch.toString());
     }
 
 

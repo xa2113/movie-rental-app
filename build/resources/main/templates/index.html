@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="fragments/head::headFragment"></div>
+    <title>A List of All Available Movies</title>
+</head>
+<body>
+
+<div th:replace="fragments/navBar::NavBarFragment"></div>
+<h1>Welcome to the Movie BlockBuster!</h1>
+<h3>Here are all the available movies to rent:</h3>
+
+
+<div>
+    <table class="table" >
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Movie Title</th>
+            <th scope="col">Main Actor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="movie : ${movies}">
+            <td><span th:text="${movie.getTitle()}"> Title </span></td>
+            <td><span th:text="${movie.getActor()}"> Actor </span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<a href="/rent">Rent a movie</a>
+<p></p>
+<a href="/customer">Create a new account</a>
+<p></p>
+<a href="/return">Directly return a movie</a>
+<p>OR</p>
+<h4>Enter your name to see a list of movies you have rented.</h4>
+<form action="#" th:action="@{/show-return}" th:object="${customer}" method="get">
+    <p>Your name <input type="text" th:field="*{customerName}"/></p>
+    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+</form>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

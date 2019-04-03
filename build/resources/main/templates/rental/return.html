@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="fragments/head::headFragment"></div>
+    <title>Enter the details to return a movie</title>
+</head>
+<body>
+<div th:replace="fragments/navBar::NavBarFragment"></div>
+<h3>Return a movie</h3>
+
+<h4>Enter your name and the movie to return</h4>
+<form action="#" th:action="@{/return}" th:object="${rentalRequest}" method="post">
+    <p>Your name <input type="text" th:field="*{customerName}"/></p>
+    <p>Movie title <input type="text" th:field="*{movieTitle}"/></p>
+    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+</form>
+
+
+</body>
+</html>
