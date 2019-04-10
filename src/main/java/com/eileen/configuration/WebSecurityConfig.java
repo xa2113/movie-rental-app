@@ -45,6 +45,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/", "/login", "/registration", "/search-results", "/error").permitAll()
                 .antMatchers("/admin/**").hasAuthority("ADMIN").anyRequest().authenticated()
                 .and().csrf().disable()
+                .authorizeRequests().antMatchers("**/rest/**").authenticated()
+                .and().csrf().disable()
                 .formLogin()
                 .loginPage("/login")
                 .usernameParameter("email")
