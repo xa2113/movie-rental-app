@@ -18,24 +18,7 @@ import java.util.Collections;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class JwtSecurityConfig {
 
-    @Autowired
-    private JwtAuthenticationProvider authenticationProvider;
 
-    @Autowired
-    private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
-
-    @Bean
-    public AuthenticationManager authenticationManager() {
-        return new ProviderManager(Collections.singletonList(authenticationProvider));
-    }
-
-    @Bean
-    public JwtAuthenticationTokenFilter authenticationTokenFilter() {
-        JwtAuthenticationTokenFilter filter = new JwtAuthenticationTokenFilter();
-        filter.setAuthenticationManager(authenticationManager());
-        filter.setAuthenticationSuccessHandler(new JwtSuccessHandler());
-        return filter;
-    }
 
 
 }

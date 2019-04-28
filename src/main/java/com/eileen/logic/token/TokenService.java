@@ -27,11 +27,15 @@ public class TokenService {
         return token.getToken();
     }
 
-    public void validateUser(String email, String password) {
+    public boolean validateUser(String email, String password) {
+        boolean validated = false;
         String encryptedPassword = tokenRepository.getPassword(email);
         if (!bCryptPasswordEncoder.matches(password, encryptedPassword)) {
             throw new UserInvalidException("user credential is wrong!");
+        } else {
+            validated = true;
         }
+        return validated;
     }
 
     public void saveTokenAndEmail(String token, String email) {
